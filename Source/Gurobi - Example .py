@@ -537,6 +537,7 @@ class ThresholdModel:
 if __name__ == "__main__":
     weights = [random.randint(1000000,1010000) for _ in range(1000)]
     #threshold = 0 # random.randint(-10, 10)
+    # random 
     threshold = int(sum(weights)/2)
 
     print("Weights:", weights)
