@@ -535,10 +535,12 @@ class ThresholdModel:
         return model.status != GRB.OPTIMAL 
 
 if __name__ == "__main__":
-    weights = [random.randint(1000000,1010000) for _ in range(1000)]
-    #threshold = 0 # random.randint(-10, 10)
-    # random 
-    threshold = int(sum(weights)/2)
+    weights = [ random.randint(-10,10) for _ in range(10) ]
+    threshold = random.randint(-10,10)
+
+    # the below is trying to simulate a random partition problem
+    #weights = [random.randint(1000000,1010000) for _ in range(1000)]
+    #threshold = int(sum(weights)/2)
 
     print("Weights:", weights)
     print("Threshold:", threshold)
