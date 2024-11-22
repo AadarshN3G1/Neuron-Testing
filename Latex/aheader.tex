@@ -1,0 +1,107 @@
+\usepackage{aheader}
+%\usepackage{theapa}
+\usepackage{epsfig}
+%\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{algorithm}
+\usepackage[noend]{algorithmic}
+%\usepackage[algoruled,linesnumbered]{algorithm2e}
+
+%%%%% Page Formatting: 
+
+\pagestyle{fancy}
+\lhead{}
+\chead{Title}
+\rhead{}
+\lfoot{KSU Reasoning Group}
+\cfoot{\thepage}
+\rfoot{\today}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+%%%%% Misc : 
+
+\newcommand\shrink[1]{}
+\def \definedas {{\:\:\:\:\stackrel{{\it{def}}}{=}\:\:\:\:}}
+\def \questioneq {{\:\stackrel{{?}}{=}\:}}
+\def\eproof{{\hfill$\Box$}}
+\newenvironment{proof}[1][Proof]
+			   {\begin{trivlist}\item[\hskip \labelsep {\bfseries #1}]}
+			   {~\eproof \end{trivlist}}
+
+\def\eql(#1,#2){{#1\!\!=\!#2}}
+
+%%%%% ED stuff : 
+
+\def\edkl{{\sc ed-kl}}
+\def\edbp{{\sc ed-bp}}
+
+\def\clone(#1){\hat{#1}}
+\def\edse(#1){{{\it SE}(#1)}}
+\def\edpm(#1){{{\it PM}(\clone(#1))}}
+%\def\pse(#1,#2,#3){{{\it SE}^{#2}_{#3}(#1)}}
+%\def\ppm(#1,#2,#3){{{\it PM}^{#2}_{#3}(#1)}}
+
+%%%%% BN stuff
+
+\def\gm{{\mathcal{M}}}
+\def\gmp{{\mathcal{M}^\prime}}
+\def\gme{{\mathcal{E}}}
+\def\gmep{{\mathcal{E}^\prime}}
+
+\def\bn{{\mathcal{N}}}
+\def\bnp{{\mathcal{N}^\prime}}
+
+\def\n(#1){\bar{#1}}
+\def\p{{\bf p}}
+\def\P{{\bf P}}
+\def\s{{\bf s}}
+\def\S{{\bf S}}
+
+\def\u{{\bf u}}
+\def\U{{\bf U}}
+\def\v{{\bf v}}
+\def\V{{\bf V}}
+\def\x{{\bf x}}
+\def\X{{\bf X}}
+\def\y{{\bf y}}
+\def\Y{{\bf Y}}
+\def\z{{\bf z}}
+\def\Z{{\bf Z}}
+\def\e{{\bf e}}
+\def\E{{\bf E}}
+\def\ep{{\bf e^\prime}}
+\def\Ep{{\bf E^\prime}}
+
+\def\pr{{\it Pr}}
+\def\prp{{\it Pr^\prime}}
+\def\prh{\widehat{\it Pr}}
+
+\def\bel{{\it BEL}}
+\def\mi{{\it MI}}
+\def\ent{{\it ENT}}
+\def\kl{{\it KL}}
+\def\ind{{\it IND}}
+
+\newcommand\name[1]{\ensuremath{\mathsf{#1}}}
+\def\true{\name{true}}
+\def\false{\name{false}}
+
+%%%%% complexity
+
+\def\NP{{\mathrm{NP}}}
+\def\PP{{\mathrm{PP}}}
+\def\NPPP{{\NP^{\PP}}}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{definition}{Definition}
+\newtheorem{proposition}{Proposition}
+\newtheorem{claim}{Claim}
+\newtheorem{condition}{Condition}
+\newtheorem{conjecture}{Conjecture}
+
+\author{Author}
+

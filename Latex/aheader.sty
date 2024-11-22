@@ -1,0 +1,35 @@
+% from UAI style sheet
+\parindent 0pt 
+\topsep 4pt plus 1pt minus 2pt 
+\partopsep 1pt plus 0.5pt minus 0.5pt 
+\itemsep 2pt plus 1pt minus 0.5pt 
+\parsep 2pt plus 1pt minus 0.5pt 
+\parskip .5pc 
+
+\renewenvironment{abstract}{\centerline{\normalsize\bf 
+Abstract}\vspace{0.5ex}\begin{quote}}{\par\end{quote}\vskip 1ex} 
+
+\def\section{\@startsection {section}{1}{\z@}{-2.0ex plus 
+    -0.5ex minus -.2ex}{1.5ex plus 0.3ex minus .2ex}{\large\bf\raggedright}} 
+\def\subsection{\@startsection{subsection}{2}{\z@}{-1.8ex plus 
+    -0.5ex minus -.2ex}{0.8ex plus .2ex}{\normalsize\bf\raggedright}} 
+\def\subsubsection{\@startsection{subsubsection}{3}{\z@}{-1.5ex plus 
+   -0.5ex minus -.2ex}{0.5ex plus .2ex}{\normalsize\bf\raggedright}} 
+
+\def\@listi{\leftmargin\leftmargini} 
+\def\@listii{\leftmargin\leftmarginii 
+   \labelwidth\leftmarginii\advance\labelwidth-\labelsep 
+   \topsep 2pt plus 1pt minus 0.5pt 
+   \parsep 1pt plus 0.5pt minus 0.5pt 
+   \itemsep \parsep} 
+\def\@listiii{\leftmargin\leftmarginiii 
+    \labelwidth\leftmarginiii\advance\labelwidth-\labelsep 
+    \topsep 1pt plus 0.5pt minus 0.5pt  
+    \parsep \z@ \partopsep 0.5pt plus 0pt minus 0.5pt 
+    \itemsep \topsep} 
+\def\@listiv{\leftmargin\leftmarginiv 
+     \labelwidth\leftmarginiv\advance\labelwidth-\labelsep} 
+\def\@listv{\leftmargin\leftmarginv 
+     \labelwidth\leftmarginv\advance\labelwidth-\labelsep} 
+\def\@listvi{\leftmargin\leftmarginvi 
+     \labelwidth\leftmarginvi\advance\labelwidth-\labelsep} 
